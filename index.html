@@ -8,15 +8,76 @@
 </head>
 <body>
 
-  <h3>Starting point for Certification Project III</h3>
-  <p>Added a really basic button as an example of interaction between the HTML and scripts via event-listeners.
-    We also have some really basic styles, so the colour of this text should be violet. We even kept a utils directory,
-    so if you want, you can move some accessory functions to that
-  </p>
+  <main class="main">
+    <header class="header">
+      <a href="#" class="logo">Quiz</a>
+      
+      <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">Play</a>
+        <a href="#">Create</a>
+        <a href="#">About</a>
+      </nav>
+    </header>
 
-  <button id="button">Increment</button>
-  <h1 id="h1">0</h1>
+    
+    <div class="container">
+      <section class="quiz-section">
+        <div class="quiz-box">
+        <h1>Quiz</h1>
+        <div class="quiz-header">
+          <span>Questions</span>
+          <span class="score">Score:0/5</span>
+        </div>
 
+        <h2 class="question">What is the full form of CSS?</h2>
+
+        <div class="choice-list">
+          <!-- <div class="choice">
+            <span>A. Casecading Styles Sheet</span>
+          </div>
+          <div class="choice">
+            <span>B. Cascading Style Sheets</span>
+          </div>
+          <div class="choice">
+            <span>C. Casacoding Style Sheets</span>
+          </div>
+          <div class="choice">
+            <span>D. None of the above</span>
+          </div>
+        </div> -->
+
+      <div class="quiz-footer">
+        <span class="totalQuestions">1 of 5 Questions</span>
+        <button class="nextbutton">Next</button>
+      </div>
+    <!-- </div> -->
+      </section>
+    <section class="home">
+      <div class="Para">
+        <h1>Quiz App</h1>
+        <p>Discover captivating quizzes!
+           Explore diverse topics and challenge yourself with every question.</p>
+           <button class="Start">Start Quiz</button>
+      </div>
+    </section>
+  </main>
+</div>
+
+  <div class="Guide">
+    <h2>Quiz Guide</h2>
+    <span class="lines">1. Read each question carefully and select your answer from the options provided.</span>
+    <span class="lines">2. Click the "Submit" button to submit your responses.</span>
+    <span class="lines">3. You'll get the result instantly after submission. </span>
+    <span class="lines">4. Take note of any questions you answered incorrectly and learn from them.</span> 
+    
+    <div class="button">
+      <button class="btn exit">Exit</button>
+      <a href="#" class="btn continue">Continue</a>
+    </div>
+
+  </div>
+  <script src="./questions.js"></script>
   <script src="./scripts.js"></script>
 </body>
 </html>
