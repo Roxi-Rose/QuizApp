@@ -1,9 +1,9 @@
 const questions = [
     {
-        Number: 1,
+        Numb: 1,
         question: "What is the full form of CSS",
         answer:"B. Cascading Style Sheets",
-        options:[
+        choice:[
             "A. Casecading Styles Sheet",
             "B. Cascading Style Sheets",
             "C. Casacoding Style Sheets",
@@ -11,10 +11,10 @@ const questions = [
         ]
     },
     {
-        Number: 2,
+        Numb: 2,
         question: "Inside which HTML element do we put the JavaScript?",
         answer:"A.  <script>",
-        options:[
+        choice:[
             "A. <script>",
             "B. <javascript>",
             "C. <scripting>",
@@ -22,10 +22,10 @@ const questions = [
        ]
     },
     {
-        Number: 3,
+        Numb: 3,
         question: "What is the first mechanical computer designed by Charles Babbage called?",
         answer:"D. Analytial Engine",
-        options:[
+        choice:[
             "A. Abacus",
             "B. Calculator",
             "C. Processor",
@@ -33,10 +33,10 @@ const questions = [
         ]
     },
     {
-        Number: 4,
+        Numb: 4,
         question: "Which HTML element is used to reference an external JavaScript file?",
         answer:"A. src",
-        options:[
+        choice:[
             "A. src",
             "B. href",
             "C. type",
@@ -44,10 +44,10 @@ const questions = [
         ]
     },
     {
-        Number: 5,
+        Numb: 5,
         question: "What type of device is computer monitor?",
         answer:"B. Output",
-        options:[
+        choice:[
             "A. Input",
             "B. Output",
             "C. Software",
