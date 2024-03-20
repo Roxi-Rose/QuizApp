@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const loginForm = document.getElementById("login-form");
+  const loginForm = document.getElementsByClassName("register");
   
   if (loginForm) {
     loginForm.addEventListener("submit", function(event) {
       event.preventDefault();
       const username = document.getElementById("username").value;
-      const password = document.getElementById("password").value;
+      const email = document.getElementById("email").value;
       console.log("Username:", username);
-      console.log("Password:", password);
+      console.log("Email:", email);
     });
   } else {
     console.error("Login form nt found..");

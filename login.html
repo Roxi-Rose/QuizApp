@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <a href="#" class="active">Home</a>
-      <a href="#">Play</a>
-      <a href="#">Create</a>
-      <a href="#">About</a>
-      
-      <a class="register" href="login.html">Login</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header>
+      <main class="main">
+          <div class="logo">
+            <img
+            src="https://i.pinimg.com/564x/bc/ac/54/bcac54da3896325a193b75a355e92bf5.jpg"
+            height="50"
+            width="50"
+            alt="logo image"
+          />
+          </div>
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="#">Play</a>
+        <a href="Create.html">Create</a>
+        <a href="About.html">About</a>
+        <a class="register" href="login.html">Login</a>
+      </nav>
+      <div class="usericon">
+        <a href="login.html">
+        <img src="https://i.pinimg.com/564x/4b/b2/bb/4bb2bb45bd21bb55053cebbd672b85f2.jpg"
+        height="50"
+        width="50"
+        alt="logo image"> 
+      </a>
+      </div>
+    </header>
 
-  <div class="Container">
-    <h2>Login</h2>
-    
-    <form id="login-form">
-      <input type="text" id="username" placeholder="Username" required>
-      <input type="password" id="password" placeholder="Password" required>
-      <button type="submit">Login</button>
-    </form>
-    
-    <div id="message"></div>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <div class="container">
+      <h2>Login</h2>
+      <form id="form">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <button type="submit">Login</button>
+      </form>
+
+      <!-- <div id="message"></div> -->
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
