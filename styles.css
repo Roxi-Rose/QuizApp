@@ -134,7 +134,26 @@ body {
   box-shadow: 0 0 9px #ffffff;
 }
 
-.Guide {
+
+.category {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* .Guide {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -194,11 +213,6 @@ body {
   cursor: pointer;
 }
 
-/* .Guide .button .btn:hover{
-  background: #000000;
-  color: #ffffff;
-} */
-
 .Guide .button .btn:nth-child(1) {
   background: transparent;
   color: #000000;
@@ -217,7 +231,7 @@ body {
 .quiz-section {
   position: relative;
   left: -50%;
-  /* left: 0; */
+  left: 0;
   width: 100%;
   background: rgb(0, 0, 0);
   display: flex;
@@ -336,4 +350,4 @@ body {
   background: linear-gradient(145deg, transparent,#ff0000, transparent);
   border-color: #ffffff;
 }
-
+ */

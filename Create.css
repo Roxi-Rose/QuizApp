@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Georgia, Times, serif;
+    
+  }
+    
+  body {
+    color: #ffffff;
+    background: url('https://i.pinimg.com/564x/e7/e7/da/e7e7da4d685d704b4bfa067cbc9bce15.jpg') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  .main.active {
+    filter: blur(15px);
+    pointer-events: none; 
+  }
+    
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10%;
+      background: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      filter: drop-shadow(0px 0px 5px #ff0000);
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    
+    .logo img {
+      border-radius: 50%;
+    }
+    
+    .usericon {
+      filter: drop-shadow(0px 0px 2px #ffffff);
+      position: absolute;
+      top: 0; 
+      right: 10px; 
+      margin-top: 5px;
+    }
+    
+    .usericon img {
+      border-radius: 50%;
+    }
+
+    .navbar a {
+        text-decoration: underline;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 500;
+        margin-left: 150px;
+        transition: .3s;
+      }
+      
+      .navbar a:hover, 
+      .navbar a.active {
+        color: rgb(255, 0, 0);
+      }
+    
+  .container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    background-color: #0000009c;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+    left: 17%;
+    margin-top: 5px;
+  }
+
+  h1 {
+    position: absolute; 
+    top: 0; 
+    left: 20%; 
+    margin-top: 10px;
+    font-size: 40px;  
+    font-family: sans-serif;
+    color: rgb(255, 255, 255); 
+    text-shadow: 0px 1px 2px rgba(255, 0, 0, 0.5);
+  }
+
+
+label {
+    justify-content: space-between;
+    /* position: absolute; 
+    top: 0; 
+    left: 20%; 
+    margin-top: 10px; */
+    background: linear-gradient(45deg, transparent, #ff0000, transparent);
+    color: #fff;
+    font-size: 30px;
+    justify-items: center;
+    align-items: center;
+    border: none;
+    margin-left: 70px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+  button {
+    font-size: 15px;
+    width: 6%;
+    padding: 3px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    margin-left: 70px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #650202;
+  }
+
+  input {
+    width: 30%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    margin-left: 70px;
+    margin-top: 10px;
+    border-radius: 4px;
+   
+  } 
