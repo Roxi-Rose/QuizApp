@@ -20,5 +20,14 @@ startbtn.onclick = () => {
   main.classList.add('active');
 }
 
-
+function redirectToQuizPage(categoryId) {
+  // Redirect to the quiz page based on the category ID
+  if (categoryId === 1) {
+    window.location.href = 'quiz1.html';
+  } else if (categoryId === 2) {
+    window.location.href = 'quiz2.html';
+  }
+}
 });
+
+  
