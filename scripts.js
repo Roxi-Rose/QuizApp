@@ -19,19 +19,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
   
 
-  // Get necessary elements from the DOM
   const questionElement = document.querySelector(".question");
-  const optionElements = document.querySelectorAll(".options span");
+  const optionElements = document.querySelectorAll(".options input");
   const scoreElement = document.querySelector(".score");
   const totalQuestionsElement = document.querySelector(".totalQuestions");
-  const nextButton = document.querySelector(".nextbutton"); // Moved this line here
+  const nextButton = document.querySelector(".nextbutton"); 
 
   let currentQuestionIndex = 0;
   let score = 0;
 
-  // Function to load a question
   function loadQuestion() {
-    const currentQuestion = scienceQuestions[currentQuestionIndex];
+    const currentQuestion = Questions[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
 
     // Populate options
@@ -60,14 +58,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Event listener for the next button
   nextButton.addEventListener("click", () => {
-    // Check if an option is selected
-    const selectedOption = document.querySelector('.options span.selected');
-    if (!selectedOption) {
-      alert('Please select an option.');
-      return;
-    }
-
-    // Move to the next question or finish the quiz
+    
+   
+    
     if (currentQuestionIndex < scienceQuestions.length - 1) {
       currentQuestionIndex++;
       loadQuestion();
@@ -81,11 +74,8 @@ document.addEventListener("DOMContentLoaded", function() {
   
     if (nextButton) {
       nextButton.addEventListener("click", () => {
-        const selectedOption = document.querySelector('.options span.selected');
-        if (!selectedOption) {
-          alert('Please select an option.');
-          return;
-        }
+        const selectedOption = document.querySelector('.options radio.selected');
+      
   
         // Process selected option
         selectOption(selectedOption.textContent);
