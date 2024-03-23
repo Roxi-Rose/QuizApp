@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const loginForm = document.getElementsByClassName("register");
+  const loginForm = document.querySelector(".register");
   
   if (loginForm) {
     loginForm.addEventListener("submit", function(event) {
@@ -13,21 +13,88 @@ document.addEventListener("DOMContentLoaded", function() {
     console.error("Login form not found..");
   }
 
-  const startbtn = document.querySelector('.Start');
-
-startbtn.onclick = () => {
-  guide.classList.add('active');
-  main.classList.add('active');
-}
-
-function redirectToQuizPage(categoryId) {
-  // Redirect to the quiz page based on the category ID
-  if (categoryId === 1) {
-    window.location.href = 'quiz1.html';
-  } else if (categoryId === 2) {
-    window.location.href = 'quiz2.html';
-  }
-}
+  // Your other script code here...
 });
 
+
   
+
+  // Get necessary elements from the DOM
+  const questionElement = document.querySelector(".question");
+  const optionElements = document.querySelectorAll(".options span");
+  const scoreElement = document.querySelector(".score");
+  const totalQuestionsElement = document.querySelector(".totalQuestions");
+  const nextButton = document.querySelector(".nextbutton"); // Moved this line here
+
+  let currentQuestionIndex = 0;
+  let score = 0;
+
+  // Function to load a question
+  function loadQuestion() {
+    const currentQuestion = scienceQuestions[currentQuestionIndex];
+    questionElement.textContent = currentQuestion.question;
+
+    // Populate options
+    optionElements.forEach((option, index) => {
+      option.textContent = currentQuestion.option[index];
+      option.classList.remove('selected');
+      option.addEventListener('click', () => selectOption(option.textContent));
+    });
+
+    // Update total questions counter
+    totalQuestionsElement.textContent = `${currentQuestionIndex + 1} of ${scienceQuestions.length}`;
+  }
+
+  // Event listeners for option selection
+  optionElements.forEach((option) => {
+    option.addEventListener("click", () => {
+      const parentOption = option.parentElement;
+      const selectedOption = document.querySelector('.options.selected');
+      
+      if (selectedOption) {
+        selectedOption.classList.remove('selected');
+      }
+      parentOption.classList.add('selected');
+    });
+  });
+
+  // Event listener for the next button
+  nextButton.addEventListener("click", () => {
+    // Check if an option is selected
+    const selectedOption = document.querySelector('.options span.selected');
+    if (!selectedOption) {
+      alert('Please select an option.');
+      return;
+    }
+
+    // Move to the next question or finish the quiz
+    if (currentQuestionIndex < scienceQuestions.length - 1) {
+      currentQuestionIndex++;
+      loadQuestion();
+    } else {
+      // Finish the quiz
+      alert(`Quiz finished! Your final score is ${score}/${scienceQuestions.length}`);
+    }
+  });
+  document.addEventListener("DOMContentLoaded", function() {
+    const nextButton = document.querySelector(".nextbutton");
+  
+    if (nextButton) {
+      nextButton.addEventListener("click", () => {
+        const selectedOption = document.querySelector('.options span.selected');
+        if (!selectedOption) {
+          alert('Please select an option.');
+          return;
+        }
+  
+        // Process selected option
+        selectOption(selectedOption.textContent);
+      });
+    } else {
+      console.error("Next button not found..");
+    }
+  
+    // Rest of your script...
+  });
+  
+

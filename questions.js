@@ -120,5 +120,5 @@ const scienceQuestions = [
   ];
   
 
-  export { scienceQuestions, computerQuestions };
+
   
