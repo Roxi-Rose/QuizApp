@@ -38,17 +38,38 @@
     <a href="index.html" class="back-button">Back</a>
 <body>
   <div class="container">
-  <h1>Create Your Own Quiz!</h1>
+    <h2>Create Your Own Quiz!</h2>
+    <div>
+
+    </div>
   <form id="quizForm">
+    <button id="addbtn">+</button>
     <label for="question">Question:</label>
-    <input type="text" id="question" required>
-    <label for="answer">Answer:</label>
+   
     <input type="text" id="answer" required>
-    <button type="submit">Add</button>
-    <button id="editbtn">Edit</button>
-    <button id="deletebtnn">Delete</button>
-    <!-- <button id="savebtn">Save</button>
-    <button id="loadbtn">Load</button> -->
+    <label for="option1">Option 1:</label><br>
+    <input type="text" id="option1" name="option1" required><br>
+
+    <label for="option2">Option 2:</label><br>
+    <input type="text" id="option2" name="option2" required><br>
+
+    <label for="option3">Option 3:</label><br>
+    <input type="text" id="option3" name="option3" required><br>
+
+    <label for="option4">Option 4:</label><br>
+    <input type="text" id="option4" name="option4" required><br><br>
+
+    <label for="correct-answer">Correct Answer:</label><br>
+    <select id="correct-answer" name="correct-answer" required>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+    </select><br><br>
+
+    
+    <!-- <button type="button" id="save-update-btn">Save/Update Question</button>
+    <button id="loadbtn">Load</button>  -->
   </form>
 </div>
   <!-- <div id="quizList"></div> -->

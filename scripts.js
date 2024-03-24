@@ -1,3 +1,5 @@
+import setQuizDataToLocalStorage from "./quiz";
+
 document.addEventListener("DOMContentLoaded", function() {
 
   // Logic for login form submission
@@ -17,5 +19,4 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
 });
-
 

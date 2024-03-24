@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
             loadQuestion();
         } else {
             // Finish the quiz
-            alert(`Quiz finished! Your final score is ${score}/${allQuestions.length}`);
+            alert(`Your highest score is ${score}/${allQuestions.length}`);
         }
     });
 
